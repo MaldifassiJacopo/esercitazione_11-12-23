@@ -1,0 +1,20 @@
+<!-- Header -->
+<header class="custom-header-bg text-black text-center py-5">
+    <div class="container">
+      <h1 class="display-4">🔥Scarpe Streetwear🔥</h1>
+      <p class="lead">Trova le scarpe che riflettono il tuo stile unico.</p>
+    </div>
+  </header>
+<div class="container">
+    <div class="row">
+      <!-- Esempio di scarpa 1 -->
+      <div class="col-md" *ngFor="let s of scarpe">
+        <div class="card">
+          <img class="card-img-top" src={{s.immagine}}>
+          <div class="card-body">
+            <h4 class="card-title">{{s.nome}}</h4>
+            <p class="card-text">{{s.descrizione}}</p>
+          </div>
+        </div>
+      </div>
+    </div> 
